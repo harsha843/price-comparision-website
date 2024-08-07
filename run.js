@@ -2,7 +2,7 @@ import { GoogleGenerativeAI } from "@google/generative-ai"
 import filter from "./filter.js"
 
 // Access your API key as an environment variable (see "Set up your API key" above)
-const genAI = new GoogleGenerativeAI("AIzaSyCyWeBfXO48iZmgGhapuKUgeZ_UP6n53TY");
+const genAI = new GoogleGenerativeAI("Your-APi-KEY");
 
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash"});
 
