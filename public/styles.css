@@ -1,0 +1,382 @@
+/* General body styling */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    text-align: center; /* Center text within the container */
+    padding: 20px;
+    background: linear-gradient(135deg, #a2c2e8, #f0f4f8); /* Light gradient background */
+    color: #333; /* Darker text color for contrast */
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Center within its parent */
+    max-width: 600px; /* Adjust as needed */
+    width: 100%;
+    font-family: 'Arial', sans-serif; /* Clean, modern font */
+    animation: fadeIn 1.5s ease-in-out; /* Fade-in animation for body */
+}
+
+/* Container styling */
+.container {
+    max-width: 800px;
+    width: 100%;
+    background: #ffffff; /* Solid white background */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    animation: slideUp 1s ease-out, bounceIn 1s; /* Slide-up and bounce-in animations for container */
+}
+
+/* Heading styling */
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #4a90e2; /* Light blue color */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for text */
+    animation: fadeInText 2s ease-in-out, colorChange 3s infinite, scaleUp 1s ease-in-out; /* Fade-in, color change, and scale-up animations */
+}
+
+/* Search form styling */
+.search-form {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Search input styling */
+.search-form input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    width: 60%;
+    margin-right: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; /* Transition for hover effect and shadow */
+    animation: inputPulse 2s infinite; /* Pulse animation for input field */
+}
+
+/* Search input hover effect */
+.search-form input[type="text"]:hover {
+    transform: scale(1.05); /* Pop-up effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+    border-color: #4a90e2; /* Light blue border on hover */
+}
+
+/* Search button styling */
+.search-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4a90e2; /* Light blue color */
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effect */
+    animation: buttonPulse 1.5s infinite; /* Pulsing animation for button */
+}
+
+/* Search button hover effect */
+.search-form button:hover {
+    background-color: #357abd; /* Darker blue on hover */
+    transform: scale(1.05); /* Pop-up effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+/* Product image styling */
+.product-image {
+    text-align: center;
+    margin-bottom: 20px;
+    animation: fadeInImage 1.5s ease-in-out; /* Fade-in animation for images */
+}
+
+/* Product image hover effect */
+.product-image img {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    animation: zoomIn 1.5s ease-in-out; /* Zoom-in animation for image */
+}
+
+/* Product image hover effect */
+.product-image img:hover {
+    transform: scale(1.05); /* Pop-up effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    animation: fadeInTable 2s ease-in-out; /* Fade-in animation for table */
+}
+
+/* Table cell styling */
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #eee; /* Lighter border color */
+    color: #333; /* Darker text color for contrast */
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+    animation: rowAnimation 1s ease-in-out; /* Row animation */
+}
+
+/* Table row hover effect */
+tr:hover {
+    background-color: #f5f5f5; /* Light gray background on hover */
+}
+
+/* Vendor logo styling */
+.vendor-logo {
+    width: 24px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 8px;
+    transition: transform 0.3s ease; /* Add transition for hover effect */
+    animation: logoPulse 2s infinite; /* Pulsing animation for vendor logo */
+}
+
+/* Vendor logo hover effect */
+.vendor-logo:hover {
+    transform: scale(1.05); /* Pop-up effect */
+}
+
+/* Form container styling */
+.form-container {
+    background: #ffffff; /* Solid white background */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out, slideUp 1s ease-out, bounceIn 1s; /* Fade-in, slide-up, and bounce-in animations */
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Form container heading styling */
+.form-container h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #4a90e2; /* Light blue color */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for text */
+    animation: headingBounce 1s ease-in-out; /* Bounce animation for heading */
+}
+
+/* Form container form styling */
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Form container input styling */
+.form-container input {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transition for border and shadow */
+    animation: inputFocus 1s ease-in-out; /* Focus animation for inputs */
+}
+
+/* Form container input focus effect */
+.form-container input:focus {
+    border-color: #4a90e2; /* Light blue border on focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5); /* Light blue shadow on focus */
+}
+
+/* Form container button styling */
+.form-container button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4a90e2; /* Light blue color */
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effect */
+    animation: buttonPulse 1.5s infinite; /* Pulsing animation for button */
+}
+
+/* Form container button hover effect */
+.form-container button:hover {
+    background: #357abd; /* Darker blue on hover */
+    transform: scale(1.05); /* Pop-up effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+/* Form container paragraph styling */
+.form-container p {
+    margin-top: 1rem;
+    color: #666; /* Lighter text color */
+}
+
+/* Form container paragraph link styling */
+.form-container p a {
+    color: #4a90e2; /* Light blue color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Form container paragraph link hover effect */
+.form-container p a:hover {
+    color: #357abd; /* Darker blue on hover */
+}
+
+/* Alert box styling */
+.alert {
+    background: #ff4d4d;
+    color: white;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation for alert */
+}
+
+/* Keyframes for bounce-in animation */
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Keyframes for pulse animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Keyframes for color change animation */
+@keyframes colorChange {
+    0% {
+        color: #4a90e2;
+    }
+    50% {
+        color: #357abd;
+    }
+    100% {
+        color: #4a90e2;
+    }
+}
+
+/* Keyframes for fade-in animation specific to text */
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Keyframes for fade-in animation specific to images */
+@keyframes fadeInImage {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Keyframes for fade-in animation specific to table */
+@keyframes fadeInTable {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Keyframes for zoom-in animation */
+@keyframes zoomIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Keyframes for row animation */
+@keyframes rowAnimation {
+    from {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Keyframes for logo pulse animation */
+@keyframes logoPulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Keyframes for heading bounce animation */
+@keyframes headingBounce {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(10px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Keyframes for input focus animation */
+@keyframes inputFocus {
+    from {
+        border-color: #ddd;
+    }
+    to {
+        border-color: #4a90e2;
+    }
+}

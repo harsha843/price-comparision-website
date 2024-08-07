@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Comparison FOR</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Price Comparison for </h1>
+
+        <!-- Search Form -->
+        <form class="search-form" action="/" method="post">
+            <input type="text" name="search" placeholder="Search for an item..." >
+            <button type="submit">Search</button>
+        </form>
+        <% if(locals.imageUrl) {%>
+
+        <div class="product-image">
+            <img src="<%= imageUrl %>" alt="<%= itemName %>">
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Vendor</th>
+                    <th>Price</th>
+                    <th>Rating</th>
+                    <th>Availability</th>
+                    <th>Delivery Time</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% prices.forEach(function(priceDetail) { %>
+                    <tr>
+                        <td>
+                            <img src="<%= priceDetail.logoUrl %>" alt="<%= priceDetail.vendor %> Logo" class="vendor-logo">
+                            <%= priceDetail.vendor %>
+                        </td>
+                        <td><%= priceDetail.price %></td>
+                        <td><%= priceDetail.rating %></td>
+                        <td><%= priceDetail.availability ? 'In Stock' : 'Out of Stock' %></td>
+                        <td><%= priceDetail.deliveryTime %></td>
+                        <td><a href="<%= priceDetail.link %>" target="_blank"><%= priceDetail.vendor %></a></td>
+                    </tr>
+                <% }); %>
+            </tbody>
+        </table>
+    </div>
+    <% } %>
+
+</body>
+</html>
